@@ -1,21 +1,22 @@
 public class SuperheroBattle{
+    static int attack(String hero){
+    switch(hero){
+        case "bijli" : 
+            System.out.println("monster attacked by lightning - damage 40");
+            return 40;
+        case "shaktiman" :
+            System.out.println("shaktimaan ka chakra - damage 50");
+            return 50;
+        default:
+            System.out.println(hero + " is not a hero");
+            return 0;
+        }
+    }
     public static void main(String[] args){
-          String hero = "Bijli Kumar";
-          int monsterHp = 100;
-
-          if(hero.equals("Bijlii Kumar")){
-            monsterHp = monsterHp - 40;
-            System.out.println("Bijli attack");
-          }
-          else if(hero.equals("Shaktiman")){
-            System.out.println("Shaktiman strikes");
-            monsterHp = monsterHp - 50;
-          }
-          else{
-            System.out.println("monster escaped");
-            monsterHp = monsterHp + 50;
-          }
-
-          System.out.println("Now monster health is " + monsterHp);
+        int monsterHp = 100;
+        monsterHp =monsterHp - attack("bijli");
+        monsterHp = monsterHp - attack("shaktiman");
+        attack("joker");
+        System.out.println("now monster Hp is " + monsterHp);
     }
 }
