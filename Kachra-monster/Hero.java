@@ -1,3 +1,3 @@
-public interface Hero(){
-    public static int attack();
+public interface Hero{
+    public int attack();
 }

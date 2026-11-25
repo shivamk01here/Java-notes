@@ -1,6 +1,6 @@
-public class ShaktimanHero implements Hero(){
-    @override
-    public static int attack(){
+public class ShaktimanHero implements Hero{
+    @Override
+    public int attack(){
         return 20;
     }
 }
